@@ -58,16 +58,23 @@ a {
     margin: 0 auto;
 }
 
+.image-plants {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+}
+
 .home-section {
     background-color: #4BB462;
-    background-image: url(img/растения.png);
     background-size: cover;
     background-position: center center;
 }
 
-
 .menu {
     padding-top: 21px;
+    position: relative;
+    z-index: 2;
 }
 
 .home-section__menu {
@@ -107,7 +114,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.home-section__content h2{
+.home-section__content h2 {
     margin-top: 67px;
 }
 
@@ -147,23 +154,36 @@ h1 {
 }
 
 #canvas {
-   height: 100%;
+    height: 100%;
+    display: block;
 }
 
-.why-section__cards {
+.why-section__cards,
+.apartments-section__cards {
     margin: 0 auto;
     margin-top: 80px;
     display: flex;
     max-width: 1230px;
 }
 
+.apartments-section__cards {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
 .why-section__card {
     background-color: #FF9CA1;
+}
+
+.why-section__card,
+.apartments-section__card {
     border-radius: 20px;
     margin-right: 28px;
 }
 
-.why-section__card:last-child {
+.why-section__card:last-child,
+.apartments-section__card:last-child {
     margin-right: 0;
 }
 
@@ -178,83 +198,132 @@ h1 {
     text-align: left;
 }
 
+.apartments-section h1,
+.gallery-section h1 {
+    margin-top: 140px;
+}
 
+.apartments-section h2 {
+    color: #FF9CA1;
+    margin: 30px 0;
+    text-align: left;
+}
 
+.apartments-section h3 {
+    color: #4BB462;
+    margin: 30px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .div {
-    border-radius: 20px;
-    background-color: var(--green, #4bb462);
-    display: flex;
-    margin-top: 91px;
-    width: 100%;
-    max-width: 1204px;
-    flex-direction: column;
-    align-items: start;
-    font-size: 22px;
-    color: #fff;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 53px 70px;
-  }
-  @media (max-width: 991px) {
-    .div {
-      max-width: 100%;
-      margin-top: 40px;
-      padding: 0 20px;
-    }
-  }
-  .div-2 {
-    text-transform: capitalize;
-    font: 37px/42px Verdessa, sans-serif;
-  }
-  .div-3 {
-    font-family: Lugatype, sans-serif;
-    line-height: 25px;
-    margin-top: 50px;
-    width: 383px;
-  }
-  @media (max-width: 991px) {
-    .div-3 {
-      margin-top: 40px;
-    }
-  }
-  .div-4 {
-    font-family: Lugatype, sans-serif;
-    justify-content: center;
-    align-items: center;
+.apartments-section__card__button {
+    cursor: pointer;
     border-radius: 40px;
-    border-color: rgba(255, 255, 255, 1);
-    border-style: solid;
+    background-color: transparent;
+    border-color: #FF9CA1;
+    color: #FF9CA1;
     border-width: 2px;
-    margin-top: 51px;
-    width: 388px;
-    max-width: 100%;
-    white-space: nowrap;
+    width: 100%;
     text-align: center;
-    line-height: 114%;
-    padding: 23px 60px;
-  }
-  @media (max-width: 991px) {
-    .div-4 {
-      margin-top: 40px;
-      white-space: initial;
-      padding: 0 20px;
-    }
-  }
+    font-family: Lugatype;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 18px 0;
+    outline: none;
+}
+
+.apartments-section__card__button:hover {
+    background-color:#FF9CA1;
+    color: #FFFFF4;
+}
+
+.variant-section {
+    background-color: #4BB462;
+    border-radius: 20px;
+    max-width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 92px;
+}
+
+.variant-section__text {
+    margin-left: 60px;
+}
+
+.variant-section h2 {
+    margin-top: 50px;
+    text-align: left;
+    font-family: Verdessa;
+}
+
+.variant-section h3 {
+    margin-top: 40px;
+    max-width: 350px;
+}
+
+.variant-section button {
+    margin: 50px 0 50px 0;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.variant-section__image {
+    float: right;
+}
+
+.gallery-section__photos {
+    max-width: 1230px;
+    margin: 75px auto 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
+.gallery-section__photos__photo {
+    margin-right: 28px;
+}
+
+.gallery-section__photos__photo:last-child {
+    margin-right: 0;
+}
+
+footer {
+    background-color: #4BB462; 
+    background-image: url(img/one-list2.png);
+    background-repeat: no-repeat;
+}
+
+.footer__content {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    float: left;
+} 
+
+footer h2 {
+    padding-top: 85px;
+    text-align: left;
+}
+
+footer h1 {
+    color: #EBFD46;
+    text-align: left;
+    margin-top: 31px;
+}
+
+.footer__navmenu {
+    margin: 85px 0;
+}
+
+.footer__menu {
+    display: grid;
+    gap: 15px;
+}
+
+footer .menu__link {
+    color: #FFFFFF;
+}

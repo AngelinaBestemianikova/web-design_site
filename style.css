@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    /* Disable scrollbar Edge */
+    width: 0;
+}
+
+@-moz-document url-prefix() {
+
+    /* Disable scrollbar Firefox */
+    html {
+        scrollbar-width: none;
+    }
+}
+
+.scrolling-wrapper {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    /* Disable scrollbar Chrome/Safari/Webkit */
+}
+
+@font-face {
+    font-family: 'Lugatype';
+    src: url(fonts/Lugatype.otf);
+    font-family: 'Verdessa';
+    src: url(fonts/Verdessa.ttf);
+}
+
+body {
+    overflow-y: scroll;
+    background-color: #FFFFF4;
+    font-family: Lugatype;
+    color: #FFFFFF;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #282C27;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.home-section {
+    background-color: #4BB462;
+    background-image: url(img/растения.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.menu {
+    padding-top: 21px;
+}
+
+.home-section__menu {
+    display: flex;
+    margin: 0 auto;
+    padding: 24px 42px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 40px;
+    justify-content: space-between;
+    max-width: 1023px;
+}
+
+.menu__link:hover {
+    color: #FF9CA1;
+}
+
+.menu__item {
+    color: #282C27;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.home-section__logo {
+    display: block;
+    margin: auto;
+    margin-top: 67px;
+}
+
+.home-section__hotel-name,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.home-section__content h2{
+    margin-top: 67px;
+}
+
+.home-section__hotel-name {
+    font-size: 96px;
+    font-family: Verdessa;
+    color: #EBFD46;
+    margin-top: 31px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.home-section__description {
+    background-color: #FF9CA1;
+    margin: 87px auto 0;
+    padding: 20px 25px;
+    max-width: 390px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdessa;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4BB462;
+    text-align: center;
+    margin-top: 57px;
+}
+
+#canvas {
+   height: 100%;
+}
+
+.why-section__cards {
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    max-width: 1230px;
+}
+
+.why-section__card {
+    background-color: #FF9CA1;
+    border-radius: 20px;
+    margin-right: 28px;
+}
+
+.why-section__card:last-child {
+    margin-right: 0;
+}
+
+.why-section__card h3 {
+    padding: 0 18px;
+    margin: 30px 0;
+}
+
+.why-section__card h2 {
+    margin-top: 40px;
+    padding: 0 18px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .div {
+    border-radius: 20px;
+    background-color: var(--green, #4bb462);
+    display: flex;
+    margin-top: 91px;
+    width: 100%;
+    max-width: 1204px;
+    flex-direction: column;
+    align-items: start;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 53px 70px;
+  }
+  @media (max-width: 991px) {
+    .div {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+  .div-2 {
+    text-transform: capitalize;
+    font: 37px/42px Verdessa, sans-serif;
+  }
+  .div-3 {
+    font-family: Lugatype, sans-serif;
+    line-height: 25px;
+    margin-top: 50px;
+    width: 383px;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      margin-top: 40px;
+    }
+  }
+  .div-4 {
+    font-family: Lugatype, sans-serif;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 51px;
+    width: 388px;
+    max-width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 114%;
+    padding: 23px 60px;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }

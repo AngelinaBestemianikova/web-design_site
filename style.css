@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 
 @font-face {
     font-family: 'Lugatype';
-    src: url(fonts/Lugatype.otf);
+    src: url(fonts/Lugatype.ttf);
     font-family: 'Verdessa';
     src: url(fonts/Verdessa.ttf);
 }
@@ -65,10 +65,6 @@ a {
     max-width: 100%;
     height: auto;
     z-index: 0;
-}
-
-@media (max-width: 1200px) {
-    .image-plants {}
 }
 
 .home-section {
@@ -124,6 +120,7 @@ h2 {
     font-size: clamp(22px, 4vw, 37px);
     font-weight: 400;
     text-transform: uppercase;
+    font-family: Lugatype;
 }
 
 .home-section__content {
@@ -177,7 +174,7 @@ h1 {
 }
 
 .why-section h1 {
-    margin-top: clamp(100px, 27vw, 500px);
+    margin-top: clamp(100px, 40vw, 500px);
 }
 
 .why-section h1,
@@ -222,6 +219,10 @@ h1 {
 
     .why-section__card:first-child {
         margin-top: 0;
+    }
+
+    .why-section h1 {
+        margin-top: clamp(100px, 25vw, 400px);
     }
 }
 

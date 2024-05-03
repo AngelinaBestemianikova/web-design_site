@@ -1,180 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-::-webkit-scrollbar {
-    /* Disable scrollbar Edge */
-    width: 0;
-}
-
-@-moz-document url-prefix() {
-
-    /* Disable scrollbar Firefox */
-    html {
-        scrollbar-width: none;
-    }
-}
-
-.scrolling-wrapper {
-    scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-    /* Disable scrollbar Chrome/Safari/Webkit */
-}
-
-@font-face {
-    font-family: 'Lugatype';
-    src: url(fonts/Lugatype.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Verdessa';
-    src: url(fonts/Verdessa.ttf) format('truetype');
-}
-
-body {
-    overflow-y: scroll;
-    background-color: #FFFFF4;
-    font-family: Lugatype;
-    color: #FFFFFF;
-}
-
-ul,
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #282C27;
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.image-plants {
-    position: absolute;
-    top: 0;
-    text-align: center;
-    max-width: 100%;
-    height: auto;
-    z-index: 0;
-}
-
-.home-section {
-    background-size: cover;
-    background-position: center center;
-}
-
-.menu {
-    padding-top: 21px;
-    position: relative;
-    max-width: 1023px;
-    margin: 0 auto;
-    z-index: 2;
-}
-
-.home-section__menu {
-    display: flex;
-    margin: 0 30px;
-    padding-top: clamp(10px, 2vw, 24px);
-    padding-bottom: clamp(10px, 2vw, 24px);
-    padding-right: clamp(18px, 4vw, 42px);
-    padding-left: clamp(18px, 4vw, 42px);
-    background-color: rgb(255, 255, 255, 0.8);
-    border-radius: 40px;
-    justify-content: space-between;
-}
-
-.menu__link:hover {
-    color: #FF9CA1;
-}
-
-.menu__item {
-    color: #282C27;
-    font-size: clamp(14px, 2.5vw, 22px);
-    text-transform: uppercase;
-}
-
 .home-section__logo {
     display: block;
     margin: auto;
     margin-top: clamp(20px, 5vw, 67px);
-    width: clamp(40px, 8vw, 100%);
+    width: clamp(30px, 8vw, 100%);
     height: auto;
     z-index: 2;
+}
+
+.menu__item:first-child .menu__link {
+    color: #FF9CA1;
+}
+
+.home-section__hotel-name {
+    color: #EBFD46;
 }
 
 .home-section__hotel-name,
 h2 {
     text-align: center;
-}
-
-h2 {
-    font-size: clamp(22px, 4vw, 37px);
-    font-weight: 400;
-    text-transform: uppercase;
-    font-family: 'Lugatype';
-}
-
-.home-section__content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-.home-section__content h2 {
-    margin-top: clamp(30px, 5.5vw, 67px);
-}
-
-.home-section__hotel-name {
-    font-size: clamp(40px, 10vw, 96px);
-    padding: 0 20px;
-    font-family: Verdessa;
-    color: #EBFD46;
-    margin-top: clamp(15px, 3vw, 31px);
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: clamp(14px, 2.5vw, 22px);
-    font-weight: 400;
-    text-transform: uppercase;
-    font-family: 'Lugatype';
-}
-
-.home-section__description {
-    background-color: #FF9CA1;
-    margin: 87px auto 0;
-    margin-top: clamp(40px, 8vw, 80px);
-    padding-top: clamp(10px, 1.7vw, 20px);
-    padding-bottom: clamp(10px, 1.7vw, 20px);
-    padding-left: clamp(10px, 1.7vw, 20px);
-    padding-right: clamp(10px, 1.7vw, 20px);
-    width: clamp(250px, 40vw, 390px);
-    border-radius: 25px;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-}
-
-h1 {
-    font-family: Verdessa;
-    font-size: clamp(35px, 6vw, 60px);
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #4BB462;
-    text-align: center;
-    margin-top: 57px;
 }
 
 .why-section h1 {
@@ -226,7 +69,7 @@ h1 {
     }
 
     .why-section h1 {
-        margin-top: clamp(100px, 25vw, 400px);
+        margin-top: clamp(50px, 25vw, 400px);
     }
 }
 
@@ -277,95 +120,24 @@ h1 {
     .apartments-section__card__image {
         width: clamp(280px, 67vw, 385px);
     }
-}
 
-.button {
-    cursor: pointer;
-    border-radius: 40px;
-    background-color: transparent;
-    border: 1px solid #FF9CA1;
-    color: #FF9CA1;
-    border-width: 2px;
-    width: 100%;
-    text-align: center;
-    font-family: Lugatype;
-    font-size: clamp(14px, 2.5vw, 22px);
-    text-transform: uppercase;
-    padding-top: clamp(10px, 2vw, 18px);
-    padding-bottom: clamp(10px, 2vw, 18px);
-}
-
-.button:hover {
-    background-color: #FF9CA1;
-    color: #FFFFF4;
-}
-
-.variant-section {
-    background-color: #4BB462;
-    border-radius: 20px;
-    max-width: 1230px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20px;
-    margin-top: clamp(70px, 15vw, 140px);
-}
-
-.variant-section__text {
-    margin-left: clamp(35px, 5vw, 60px);
-}
-
-.variant-section h2 {
-    margin-top: clamp(20px, 4vw, 50px);
-    text-align: left;
-    font-family: Verdessa;
-}
-
-.variant-section h3 {
-    margin-top: clamp(18px, 4vw, 40px);
-    max-width: 350px;
-}
-
-.variant-section button {
-    margin-top: clamp(20px, 4vw, 45px);
-    margin-bottom: clamp(20px, 4vw, 50px);
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-}
-
-.variant-section button:hover {
-    border-color: #FF9CA1;
-}
-
-.variant-section__image {
-    float: right;
-}
-
-@media (max-width: 992px) {
-    .variant-section {
-        position: relative;
-        overflow: hidden;
-        width: clamp(280px, 60vw, 465px);
-        margin-right: auto;
-        margin-left: auto;
-        max-height: clamp(330px, 60vw, 550px);
+    .home-section__content div {
+        display: flex;
+        margin-top: clamp(20px, 8.5vw, 50px);
+        justify-content: center;
     }
 
-    .variant-section__image {
-        position: relative;
-        z-index: 1;
-        max-width: 100%;
-        height: auto;
+    .home-section__logo {
+        margin: 0;
+        margin-right: 20px;
     }
 
-    .variant-section__text {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        z-index: 2;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 0;
+    .home-section__content div h2 {
+        margin: auto 0;
+    }
+
+    .why-section h1 {
+        margin-top: clamp(50px, 24vw, 145px);
     }
 }
 
@@ -389,59 +161,14 @@ h1 {
     margin-right: 0;
 }
 
-footer {
-    margin-top: clamp(40px, 10vw, 96px);
-    background-color: #4BB462;
-    background-image: url(img/one-list2.png);
-    background-repeat: no-repeat;
+.button a {
+    color: #FF9CA1;
 }
 
-.footer__content {
-    padding: 0 20px;
-    max-width: 1230px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.button:hover a{
+    color: #FFFFFF;   
 }
 
-footer img {
-    float: left;
-}
-
-footer h2 {
-    padding-top: clamp(30px, 8vw, 80px);
-    text-align: left;
-}
-
-footer h1 {
-    color: #EBFD46;
-    text-align: left;
-    margin-top: clamp(15px, 3vw, 31px);
-}
-
-.footer__navmenu {
-    margin-top: clamp(30px, 8vw, 80px);
-    margin-bottom: clamp(30px, 8vw, 80px);
-}
-
-.footer__menu {
-    display: grid;
-    gap: 15px;
-}
-
-footer .menu__link {
+.green-section__text a {
     color: #FFFFFF;
-}
-
-@media (max-width: 450px) {
-    .footer__content {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__content h2,
-    .footer__content h1 {
-        text-align: center;
-    }
 }

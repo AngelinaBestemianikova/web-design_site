@@ -1,0 +1,85 @@
+.menu__item:nth-child(2) .menu__link {
+    color: #FF9CA1;
+}
+
+.gallery-section h1 {
+    margin-top: clamp(70px, 15vw, 140px);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.gallery-section__photos {
+    padding: 0 20px;
+    max-width: 1230px;
+    margin: 0 auto;
+    margin-top: clamp(30px, 8vw, 80px);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
+.gallery-section__photos__photo {
+    margin-right: 28px;
+    width: clamp(280px, 67vw, 385px);
+}
+
+.gallery-section__photos__photo:last-child {
+    margin-right: 0;
+}
+
+.home-section__hotel-name {
+    text-align: center;
+    color: black;
+    margin-top: clamp(40px, 10vw, 125px);
+}
+
+.home-section__description {
+    text-align: left;
+}
+
+.button {
+    margin-top: clamp(18px, 4vw, 40px);
+    width: clamp(250px, 40vw, 390px);
+    background-color: #FF9CA1;
+    color: #FFFFFF;
+}
+
+.button a {
+    color: #FFFFFF;
+}
+
+.button:hover a{
+    color: #FF9CA1;   
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #FF9CA1;
+}
+
+.gallery-section h1 {
+    margin-top: clamp(70px, 40vw, 500px);
+}
+
+@media (max-width: 1200px) {
+    .gallery-section h1 {
+        margin-top: clamp(70px, 30vw, 300px);
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-section h1 {
+        margin-top: clamp(70px, 22vw, 300px);
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-section h1 {
+        margin-top: clamp(70px, 15vw, 200px);
+    }
+}
+
+.green-section .button {
+    background-color: transparent;
+}

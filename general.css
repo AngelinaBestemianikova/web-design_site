@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    /* Disable scrollbar Edge */
+    width: 0;
+}
+
+@-moz-document url-prefix() {
+
+    /* Disable scrollbar Firefox */
+    html {
+        scrollbar-width: none;
+    }
+}
+
+.scrolling-wrapper {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    /* Disable scrollbar Chrome/Safari/Webkit */
+}
+
+@font-face {
+    font-family: 'Lugatype';
+    src: url(fonts/Lugatype.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Verdessa';
+    src: url(fonts/Verdessa.ttf) format('truetype');
+}
+
+body {
+    overflow-y: scroll;
+    background-color: #FFFFF4;
+    font-family: Lugatype;
+    color: #FFFFFF;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #282C27;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.home-section {
+    background-size: cover;
+    background-position: center center;
+}
+
+.menu {
+    padding-top: 21px;
+    position: relative;
+    max-width: 1023px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.home-section__menu {
+    display: flex;
+    margin: 0 20px;
+    padding-top: clamp(8px, 2vw, 24px);
+    padding-bottom: clamp(8px, 2vw, 24px);
+    padding-right: clamp(12px, 4vw, 42px);
+    padding-left: clamp(12px, 4vw, 42px);
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 40px;
+    justify-content: space-between;
+}
+
+.menu__link:hover {
+    color: #FF9CA1;
+}
+
+.menu__item {
+    color: #282C27;
+    font-size: clamp(16px, 2.5vw, 22px);
+    text-transform: uppercase;
+}
+
+.image-plants {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+h2 {
+    font-size: clamp(22px, 4vw, 37px);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Lugatype';
+}
+
+h3 {
+    font-size: clamp(14px, 2.5vw, 22px);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Lugatype';
+}
+
+h1 {
+    font-family: Verdessa;
+    font-size: clamp(35px, 6vw, 60px);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4BB462;
+    text-align: center;
+    margin-top: 57px;
+}
+
+.home-section__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.home-section__content h2 {
+    margin-top: clamp(30px, 5.5vw, 67px);
+}
+
+.home-section__hotel-name {
+    font-size: clamp(40px, 10vw, 96px);
+    padding: 0 20px;
+    font-family: Verdessa;
+    color: #EBFD46;
+    margin-top: clamp(15px, 3vw, 31px);
+    text-transform: uppercase;
+}
+
+.home-section__description {
+    background-color: #FF9CA1;
+    margin: 0 auto;
+    margin-top: clamp(20px, 8vw, 80px);
+    padding-top: clamp(12px, 1.7vw, 20px);
+    padding-bottom: clamp(12px, 1.7vw, 20px);
+    padding-left: clamp(12px, 1.7vw, 20px);
+    padding-right: clamp(12px, 1.7vw, 20px);
+    width: clamp(250px, 40vw, 390px);
+    border-radius: clamp(18px, 3vw, 25px);
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid #FF9CA1;
+    color: #FF9CA1;
+    border-width: 2px;
+    width: 100%;
+    text-align: center;
+    font-family: Lugatype;
+    font-size: clamp(14px, 2.5vw, 22px);
+    text-transform: uppercase;
+    padding-top: clamp(10px, 2vw, 18px);
+    padding-bottom: clamp(10px, 2vw, 18px);
+}
+
+.button:hover {
+    background-color: #FF9CA1;
+    color: #FFFFFF;
+}
+
+.green-section {
+    background-color: #4BB462;
+    border-radius: 20px;
+    max-width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    margin-top: clamp(70px, 15vw, 140px);
+}
+
+.green-section__text {
+    margin-left: clamp(35px, 5vw, 60px);
+}
+
+.green-section h2 {
+    margin-top: clamp(20px, 4vw, 50px);
+    text-align: left;
+    font-family: Verdessa;
+}
+
+.green-section h3 {
+    margin-top: clamp(18px, 4vw, 40px);
+    max-width: 350px;
+}
+
+.green-section .button {
+    margin-top: clamp(20px, 4vw, 45px);
+    margin-bottom: clamp(20px, 4vw, 50px);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.green-section .button:hover {
+    border-color: #FF9CA1;
+}
+
+.green-section__image {
+    float: right;
+}
+
+@media (max-width: 992px) {
+    .green-section {
+        position: relative;
+        overflow: hidden;
+        width: clamp(280px, 90vw, 465px);
+        margin-right: auto;
+        margin-left: auto;
+        max-height: clamp(330px, 60vw, 550px);
+    }
+
+    .green-section__image {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .green-section__text {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 0;
+    }
+}
+
+footer {
+    margin-top: clamp(40px, 10vw, 96px);
+    background-color: #4BB462;
+    background-image: url(img/one-list2.png);
+    background-repeat: no-repeat;
+}
+
+.footer__content {
+    padding: 0 20px;
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    float: left;
+}
+
+footer h2 {
+    padding-top: clamp(30px, 8vw, 80px);
+    text-align: left;
+}
+
+footer h1 {
+    color: #EBFD46;
+    text-align: left;
+    margin-top: clamp(15px, 3vw, 31px);
+}
+
+.footer__navmenu {
+    margin-top: clamp(30px, 8vw, 80px);
+    margin-bottom: clamp(30px, 8vw, 80px);
+}
+
+.footer__menu {
+    display: grid;
+    gap: 15px;
+}
+
+footer .menu__link {
+    color: #FFFFFF;
+}
+
+@media (max-width: 450px) {
+    .footer__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__content h2,
+    .footer__content h1 {
+        text-align: center;
+    }
+}
